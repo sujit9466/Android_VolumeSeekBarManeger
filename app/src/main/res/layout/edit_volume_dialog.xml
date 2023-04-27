@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:paddingBottom="40dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/edit_dialog_lable"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:text="Edit Volume"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+
+    <ImageView
+        android:id="@+id/imgDialogClose"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="50dp"
+        android:src="@drawable/baseline_close_24"
+        android:background="@color/black"
+        android:layout_height="50dp"/>
+
+
+    <TextView
+        android:id="@+id/lableMedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        android:text=" Media "
+        android:textSize="20dp"
+
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_dialog_lable" />
+
+    <ImageView
+        android:id="@+id/imgMedia"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:src="@drawable/music"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lableMedia" />
+
+    <SeekBar
+        android:id="@+id/seekMedia"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:max="100"
+        android:min="10"
+        android:layout_marginLeft="50dp"
+        android:padding="5dp"
+        app:layout_constraintLeft_toRightOf="@id/imgMedia"
+        app:layout_constraintTop_toBottomOf="@id/lableMedia" />
+
+    <TextView
+        android:id="@+id/lableCalls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:text=" Call "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgMedia" />
+
+    <ImageView
+        android:id="@+id/imgCalls"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:src="@drawable/baseline_call_24"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lableCalls" />
+
+    <SeekBar
+        android:id="@+id/seekCalls"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:padding="5dp"
+        android:min="10"
+        app:layout_constraintLeft_toRightOf="@id/imgCalls"
+        app:layout_constraintTop_toBottomOf="@id/lableCalls" />
+
+    <TextView
+        android:id="@+id/lableNotifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:text=" Alarm "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgCalls" />
+
+    <ImageView
+        android:id="@+id/imgNotifications"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:src="@drawable/baseline_notifications_24"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lableNotifications" />
+
+    <SeekBar
+        android:id="@+id/seekNotifications"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:min="10"
+        android:padding="5dp"
+        app:layout_constraintLeft_toRightOf="@id/imgNotifications"
+        app:layout_constraintTop_toBottomOf="@id/lableNotifications" />
+
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="100dp"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lableNotifications" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
